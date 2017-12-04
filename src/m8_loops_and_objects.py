@@ -178,7 +178,7 @@ def draw_circles3():
     print('--------------------------------------------------')
     print('Running draw_circles3:  See graphics window')
     print('--------------------------------------------------')
-    window = rg.RoseWindow(400, 400)
+    window = rg.RoseWindow(300, 300)
 
     center = rg.Point(200, 150)
     for k in range(100):
