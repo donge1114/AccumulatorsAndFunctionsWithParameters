@@ -110,7 +110,7 @@ def better_draw_circles():
 
 
 # ----------------------------------------------------------------------
-# TODO: 3.
+# DONE: 3.
 #   In the previous exercise, you made a MORE POWERFUL version
 #   of draw_circles by introducing a PARAMETER for the amount by
 #   which the radii of the concentric circles increase.
@@ -145,9 +145,9 @@ def even_better_draw_circles():
     center = rg.Point(100, 200)
     for k in range(42):
         circle = rg.Circle(center, 6 * k)
-        circle.pen = rg.Pen('green', 1 )
+        circle.outline_color= 'green'
         circle.attach_to(window)
-        window.render(0.05)
+        window.render(0.5)
 
 
     window.close_on_mouse_click()
