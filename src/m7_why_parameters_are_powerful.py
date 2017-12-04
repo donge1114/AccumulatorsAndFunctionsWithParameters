@@ -12,6 +12,7 @@ def main():
     """ Calls the   TEST   functions in this module. """
     run_test_draw_circles()
     run_test_better_draw_circles()
+    run_test_even_better_draw_circles()
     # Un-comment the next lines when you are ready to use them.
     # run_test_better_draw_circles()
     # run_test_even_better_draw_circles()
@@ -99,7 +100,7 @@ def better_draw_circles():
     window = rg.RoseWindow(400, 400)
 
     center = rg.Point(200, 200)
-    for k in range(42):
+    for k in range(21):
         circle = rg.Circle(center, 5 * k)
         circle.attach_to(window)
         window.render(0.05)
@@ -136,7 +137,20 @@ def better_draw_circles():
 #   In testing your even_better_draw_circles function,
 #   can you make some fun pictures?
 # ----------------------------------------------------------------------
+def run_test_even_better_draw_circles():
+    even_better_draw_circles()
+def even_better_draw_circles():
+    window = rg.RoseWindow(400, 400)
 
+    center = rg.Point(100, 200)
+    for k in range(42):
+        circle = rg.Circle(center, 6 * k)
+        circle.pen = rg.Pen('green', 1 )
+        circle.attach_to(window)
+        window.render(0.05)
+
+
+    window.close_on_mouse_click()
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
